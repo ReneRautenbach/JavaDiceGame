@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainBorderPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DicePlayingArea.MainController">
+   <left>
+      <VBox fillWidth="false" maxWidth="120.0" minWidth="100.0" prefHeight="600.0" prefWidth="120.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAddDie" onMouseClicked="#handleAddDieAction" style="-fx-pref-width: 120;" text="Add Die" />
+            <Button fx:id="btnRollAll" onMouseClicked="#handleRerollDieAction" style="-fx-pref-width: 120;" text="Reroll All" />
+            <Label fx:id="lblDiceTotal" alignment="CENTER" style="-fx-min-width: 120;" text="Score =" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="playingArea" prefHeight="450" prefWidth="450" style="-fx-background-color: #999;" >
+
+      </Pane>
+   </center>
+</BorderPane>
